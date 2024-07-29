@@ -53,6 +53,34 @@ padding: 5px;
   cursor: pointer;
 }
 
+.lsOptions{
+    padding: 10px;
+}
+.lsOptionItem{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+
+}
+
+.lsOptionInput{
+    width: 50px;
+}
+
+.listSearch>button{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(5, 118, 156);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500px;
+}
+
 .listResult{
     flex:3;
 }
