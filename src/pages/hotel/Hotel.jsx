@@ -12,7 +12,7 @@ const Hotel = () => {
   const[open, setOpen] = useState(false);
 
   const photos = [
-    { src: 'https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620481.jpg?k=ad98fce8bd27f05b2e5ddf8816ff1fd2a9b12feb9e56a31247099f8e0ef4cf51&o=&hp=1' },
     { src: 'https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=400' },
     { src: 'https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=400' },
     { src: 'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=400' },
