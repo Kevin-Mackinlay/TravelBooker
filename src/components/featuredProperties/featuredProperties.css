@@ -6,6 +6,14 @@
     gap: 20px;
 }
 
+.fPropertiesLink{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    gap: 8px;
+    color: black
+}
+
 .fPropertiesItem{
     flex:1;
     gap: 10px;

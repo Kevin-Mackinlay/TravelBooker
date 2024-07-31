@@ -8,36 +8,35 @@ import Footer from '../../components/footer/Footer.jsx';
 import { useState } from 'react';
 
 const Hotel = () => {
-  const[slideNumber, setSlideNumber] = useState(0);
-  const[open, setOpen] = useState(false);
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [open, setOpen] = useState(false);
 
   const photos = [
     { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620481.jpg?k=ad98fce8bd27f05b2e5ddf8816ff1fd2a9b12feb9e56a31247099f8e0ef4cf51&o=&hp=1' },
-    { src: 'https://images.pexels.com/photos/189333/pexels-photo-189333.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/460537/pexels-photo-460537.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/3770291/pexels-photo-3770291.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/3682240/pexels-photo-3682240.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/707581/pexels-photo-707581.jpeg?auto=compress&cs=tinysrgb&w=400' },
-    { src: 'https://images.pexels.com/photos/974382/pexels-photo-974382.jpeg?auto=compress&cs=tinysrgb&w=400' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620899.jpg?k=97e30eab87f9abcdbb4b5d39b44d273bf252555682eab942994560d49eab0962&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539623182.jpg?k=c9181a2552a91bcb18c8326ad6f62595c0e9b371f9aef157d2af28635efee060&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620904.jpg?k=21524008110725e4efcd430a7ca509c9e9960c17b3af24ad00e040e57ede576b&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620905.jpg?k=826effede733edf0f58718ba6506b5ca7f04d31f74de7aa8654b865298919f77&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539620894.jpg?k=7db4ddab0560000ee7415872c8cae9ea37b8150870e96de9b71e9a7eea7ae36e&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539623191.jpg?k=e12d90c30160dbd275783c5834d4669975dca6e1096c221aad6496c3170bc654&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539623186.jpg?k=76f95b9414057d9aa22469b1edec1d470a984ebdddf6cc519bfab167d3e41b26&o=&hp=1' },
+    { src: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/539623210.jpg?k=ead1ae1bf43969248d61bc7a7e7a789e4883570e83184f3663441f839c26b304&o=&hp=1' },
   ];
 
-const handleOpen = (i) => {
-  setSlideNumber(i);
-  setOpen(true);
-}
+  const handleOpen = (i) => {
+    setSlideNumber(i);
+    setOpen(true);
+  };
 
-const handleMove = (direction) => {
-  let newSlideNumber;
-  if (direction === 'l') {
-    newSlideNumber = slideNumber === 0 ? 5 : slideNumber - 1;
-  }else{
-    newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
-  }
-  setSlideNumber(newSlideNumber);
-
-};
+  const handleMove = (direction) => {
+    let newSlideNumber;
+    if (direction === 'l') {
+      newSlideNumber = slideNumber === 0 ? 5 : slideNumber - 1;
+    } else {
+      newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
+    }
+    setSlideNumber(newSlideNumber);
+  };
   return (
     <div>
       <Navbar />

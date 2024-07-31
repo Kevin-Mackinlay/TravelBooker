@@ -1,31 +1,29 @@
-.navbar{
-    height: 50px;
-   background-color:#025fc1; /* Bootstrap primary blue */
-   display: flex;
-   justify-content: center;
-
-
+.navbar {
+  height: 50px;
+  background-color: #025fc1; /* Bootstrap primary blue */
+  display: flex;
+  justify-content: center;
 }
 
-.navContainer{
-    width: 100%;
-    max-width: 1024px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo{
-    font-weight: 500;
-
+.logo {
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
 }
 
-.navButton{
-    margin-left: 20px;
-    border:none;
-    padding: 5px 10px;
-    cursor: pointer;
-    color: blue;
+.navButton {
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: blue;
 }
